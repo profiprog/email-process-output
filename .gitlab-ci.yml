@@ -1,0 +1,8 @@
+image: node:7.4.0
+
+build:
+  script:
+    - npm install
+  stage: deploy
+  only:
+    - master

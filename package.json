@@ -1,0 +1,28 @@
+{
+  "name": "email-process-output",
+  "version": "0.0.0",
+  "description": "Allows easy send process output (stdout and stderr) as email. Good solution form cron scripts.",
+  "main": "src/email-process-output.js",
+  "bin": {
+    "email-process-output": "src/email-process-output.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\"",
+    "preversion": "[ -f ~/.npmrc.token.profiprog ] && cat ~/.npmrc.token.profiprog > ~/.npmrc; [ \"$(npm whoami)\" == \"profiprog\" ]",
+    "version": "npm publish",
+    "postversion": "git push --follow-tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/profiprog/email-process-output.git"
+  },
+  "keywords": [
+    "email",
+    "cron"
+  ],
+  "author": "https://github.com/profiprog",
+  "license": "ISC",
+  "dependencies": {
+    "nodemailer": "^4.6.7"
+  }
+}
