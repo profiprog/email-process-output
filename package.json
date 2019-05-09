@@ -1,6 +1,6 @@
 {
   "name": "email-process-output",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Allows easy send process output (stdout and stderr) as email. Good solution form cron scripts.",
   "main": "src/email-process-output.js",
   "bin": {
